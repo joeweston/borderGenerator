@@ -16,11 +16,7 @@ $(document).ready(function(){
     UI.removeInset();
   });
 
-  $(".slide-container").on("change","input[type=range]", function(){
-    $(this).siblings(".slide-value").text( $(this).val() )
-    UI.applyOutlines();
-    UI.applyInsets();
-  })
+
   $(".color-container").on("change","input[type=color]", function(){
     $(this).siblings(".color-value").text( $(this).val() )
     UI.applyOutlines();
